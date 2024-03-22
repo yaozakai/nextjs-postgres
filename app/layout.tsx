@@ -24,6 +24,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <title>Walt Yao's Login/Register App</title>
+        <link rel="stylesheet" type="text/css" href="./main.css"></link>
+      </head>
       <body className={GeistSans.variable}>{children}</body>
     </html>
   );
