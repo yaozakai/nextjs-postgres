@@ -1,9 +1,7 @@
 import React from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
 import Logo from '@/app/ui/logo';
-import { poppinsRegular } from '@/app/ui/fonts';
-import LoginForm from './login/form';
+// import { poppinsRegular } from '@/app/ui/fonts';
+// import LoginForm from './login/form';
 
 
 
@@ -20,7 +18,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <Logo />
         </div>
       </div>
-      <LoginForm />
+      {/* <LoginForm /> */}
     </div>
   </main>
   );
