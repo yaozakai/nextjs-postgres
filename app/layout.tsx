@@ -26,9 +26,10 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <title>Walt Yao&apos;s Login/Register App</title>
-
       </head>
-      <body className={poppinsRegular.className}>{children}</body>
+      <body className={poppinsRegular.className}>
+        {children}
+      </body>
     </html>
   );
 }
