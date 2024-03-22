@@ -1,21 +1,21 @@
-import './globals.css';
+import '../public/globals.css';
 
-import { GeistSans } from 'geist/font/sans';
+import { poppinsRegular } from './ui/fonts';
 
-let title = 'Next.js + Postgres Auth Starter';
-let description =
-  'This is a Next.js starter kit that uses NextAuth.js for simple email + password login and a Postgres database to persist the data.';
+// let title = 'Next.js + Postgres Auth Starter';
+// let description =
+//   'This is a Next.js starter kit that uses NextAuth.js for simple email + password login and a Postgres database to persist the data.';
 
-export const metadata = {
-  title,
-  description,
-  twitter: {
-    card: 'summary_large_image',
-    title,
-    description,
-  },
-  metadataBase: new URL('https://nextjs-postgres-auth.vercel.app'),
-};
+// export const metadata = {
+//   title,
+//   description,
+//   twitter: {
+//     card: 'summary_large_image',
+//     title,
+//     description,
+//   },
+//   metadataBase: new URL('https://nextjs-postgres-auth.vercel.app'),
+// };
 
 export default function RootLayout({
   children,
@@ -26,9 +26,9 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <title>Walt Yao's Login/Register App</title>
-        <link rel="stylesheet" type="text/css" href="./main.css"></link>
+
       </head>
-      <body className={GeistSans.variable}>{children}</body>
+      <body className={poppinsRegular.className}>{children}</body>
     </html>
   );
 }
