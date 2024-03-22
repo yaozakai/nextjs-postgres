@@ -1,7 +1,7 @@
 import React from 'react';
 import Logo from '@/app/ui/logo';
 // import { poppinsRegular } from '@/app/ui/fonts';
-// import LoginForm from './login/form';
+import LoginForm from './login/form';
 
 
 export default function Page() {
@@ -13,7 +13,7 @@ export default function Page() {
           <Logo />
         </div>
       </div>
-      {/* <LoginForm /> */}
+      <LoginForm />
     </div>
   </main>
   );
