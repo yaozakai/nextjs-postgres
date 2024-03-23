@@ -23,19 +23,17 @@ export default function Logo() {
   );
 }
 
-export function LogoSmall() {
+export function LogoTop() {
   return (
-    <div className={`${poppinsRegular.className} flex flex-row items-center leading-none text-white`} >
+    <div className={`${poppinsRegular.className} top-3 w-100 absolute md:w-20 md:top-8 flex flex-row items-center leading-none text-white`} >
 
         <Image
           src={waltAvatar}
-          className="w-[100px] block"
+          className="w-[70px] md:w-[100px] static md:absolute top-0 md:top-3 md:left-3"
           alt="Screenshot of the dashboard project showing mobile version"
         />
-        <p className="w-[100px] h-[88px] absolute left-[140px] top-[40px] text-[44px] text-left text-white mt-3">
-          <span className="text-[36px] text-left text-white">Walt</span>
-          <br />
-          <span className="text-[36px] text-left text-white">Yao</span>
+        <p className="absolute w-40 md:w-auto md:w-0 top-[20px] h-[88px] left-[80px] md:left-[90px] text-[44px] text-left text-white ">
+          <span className=" text-[36px] text-left text-white">Walt Yao</span>
         </p>
 
 

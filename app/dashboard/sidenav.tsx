@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import NavLinks from './nav-links';
-import { LogoSmall } from '../ui/logo';
+import { LogoTop } from '../ui/logo';
 import { PowerIcon } from '@heroicons/react/24/outline';
 import { signOut } from '../login/auth';
 
@@ -11,10 +11,8 @@ export default function SideNav() {
       <Link
         className="mb-2 flex h-20 items-end justify-start rounded-md bg-blue-600 p-4 md:h-40"
         href="/"
-      >
-        <div className="w-32 text-white md:w-40">
-          <LogoSmall />
-        </div>
+      ><LogoTop />
+
       </Link>
       <div className="flex grow flex-row justify-between space-x-2 md:flex-col md:space-x-0 md:space-y-2">
         <NavLinks />
