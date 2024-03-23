@@ -4,7 +4,8 @@
     "dev": "next dev --turbo",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "seed": "node -r dotenv/config ./scripts/seed.js"
   },
   "dependencies": {
     "@heroicons/react": "^2.1.1",
@@ -15,6 +16,7 @@
     "bcrypt": "^5.1.1",
     "bcrypt-ts": "^5.0.0",
     "clsx": "^2.1.0",
+    "dotenv": "^16.4.5",
     "drizzle-orm": "^0.29.2",
     "geist": "^1.2.0",
     "next": "^14.0.4",

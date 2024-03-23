@@ -1,5 +1,4 @@
 import NextAuth from 'next-auth';
-// import { authConfig } from './auth.config';
 import Credentials from 'next-auth/providers/credentials';
 import { z } from 'zod';
 import { sql } from '@vercel/postgres';
@@ -10,7 +9,6 @@ import GoogleProvider from "next-auth/providers/google";
 import GithubProvider from "next-auth/providers/github";
 import FacebookProvider from "next-auth/providers/facebook";
 import TwitterProvider from "next-auth/providers/twitter";
-// import { __dirname } from './dirname.js';
 
 async function getUser(email: string): Promise<User | undefined> {
     try {
